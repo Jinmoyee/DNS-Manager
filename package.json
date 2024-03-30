@@ -1,0 +1,22 @@
+{
+  "name": "dns-test",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000D\u0000N\u0000S\u0000-\u0000M\u0000a\u0000n\u0000a\u0000g\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon backend/index.js",
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.2.4",
+    "nodemon": "^3.1.0"
+  }
+}
