@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-react-swc": "^3.6.0",
     "dns-test": "file:..",
     "react": "^18.2.0",
     "react-data-table-component": "^7.6.2",
