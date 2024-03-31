@@ -13,13 +13,13 @@ export default function Table() {
   // console.log(data);
 
   const getData = async () => {
-    let result = await fetch("http://localhost:1000/data");
+    let result = await fetch("/data");
     const documents = await result.json();
     setData(documents);
   };
 
   const handleDelete = async (id) => {
-    const res = await fetch(`http://localhost:1000/delete/${id}`, {
+    const res = await fetch(`/delete/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",

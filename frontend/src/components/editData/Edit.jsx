@@ -13,7 +13,7 @@ export default function Edit() {
     fetchData();
   }, []);
   const fetchData = async () => {
-    const res = await fetch(`http://localhost:1000/prevData/${paramsId.id}`);
+    const res = await fetch(`/prevData/${paramsId.id}`);
     const data = await res.json();
     setFormData(data);
   };
@@ -27,7 +27,7 @@ export default function Edit() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch(`http://localhost:1000/edit/${paramsId.id}`, {
+    const res = await fetch(`/edit/${paramsId.id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",

@@ -11,7 +11,7 @@ const Add = () => {
   };
   const handleSumbit = async (e) => {
     e.preventDefault();
-    const res = await fetch("http://localhost:1000/add", {
+    const res = await fetch("/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
