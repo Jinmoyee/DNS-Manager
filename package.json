@@ -1,7 +1,7 @@
 {
   "name": "dns-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000D\u0000N\u0000S\u0000-\u0000M\u0000a\u0000n\u0000a\u0000g\u0000e\u0000r\u0000\r\u0000 \u0000",
   "main": "index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -67,7 +67,6 @@
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
     "minimatch": "^3.1.2",
-    "mongo": "^0.1.0",
     "mongodb": "^6.5.0",
     "mongodb-connection-string-url": "^3.0.0",
     "mongoose": "^8.2.4",
@@ -118,8 +117,12 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon backend/index.js",
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
+  "type": "module",
   "license": "ISC"
 }
