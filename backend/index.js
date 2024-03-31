@@ -19,8 +19,8 @@ mongoose.connect(process.env.MONGO).then(() => {
 
 const __dirname = path.resolve();
 
-app.listen(3000, (req, res) => {
-  console.log("Server is running at port 3000");
+app.listen(1000, (req, res) => {
+  console.log("Server is running at port 1000");
 });
 
 app.use("/", Add);
