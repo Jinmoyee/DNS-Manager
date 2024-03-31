@@ -11,6 +11,7 @@ import path from "path";
 const app = express();
 app.use(express.json());
 app.use(cors());
+dotenv.config();
 
 mongoose.connect(process.env.MONGO).then(() => {
   console.log("Connected to mongoDB");
@@ -26,7 +27,6 @@ app.use("/", Add);
 app.use("/", Edit);
 app.use("/", Data);
 app.use("/", Delete);
-dotenv.config();
 
 app.use(express.static(path.join(__dirname, "/frontend/build")));
 
